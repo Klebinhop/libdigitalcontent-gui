@@ -162,11 +162,7 @@ int main() {
     closeButton.loadFromMemory(closeImgData.data(), closeImgData.size());
     sf::Texture closeTexture;
     closeTexture.loadFromImage(closeButton);
-    sf::Sprite closeSprite;uid_t uid = getuid();
-    if (uid != 0) {
-        printf("libdigitalcontent-config only run a root\n");
-        exit(6);
-    }
+    sf::Sprite closeSprite;
     closeSprite.setTexture(closeTexture);
     closeSprite.setScale(0.08,0.08);
     closeSprite.setPosition(490,60);
@@ -223,6 +219,7 @@ int main() {
                     configText.setFillColor(transparent);
                     textNumber.setFillColor(transparent);
                     setTime(numberHours);
+		    system("systemctl daemon-reload && systemctl start libdigitalcontent.service");
                     printf("Close clicked\n");
                 }
 
