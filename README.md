@@ -5,3 +5,4 @@ Technology offers several benefits, but it is important to use it with moderatio
 Consequences of Digital Addiction: Mental Health: Anxiety, depression, low self-esteem, sleep problems, social isolation. Physical Health: Eye fatigue, back pain, posture problems, obesity. Relationships: Communication difficulties, family conflicts, social isolation. Work and Studies: Drop in productivity, absenteeism, difficulty concentrating.
 ## Building
 * To compile, just run sudo make
+* This program depends sfml and systemd
